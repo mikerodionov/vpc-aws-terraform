@@ -28,10 +28,10 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd path/to/your/tests  # Change to the directory containing your Terratest code
+        cd aws-vpc-deploy-module-tests # Change to the directory containing your Terratest code
         go mod download
 
     - name: Run Terratest
       run: |
-        cd path/to/your/tests  # Ensure this points to the directory with your Terratest code
+        cd aws-vpc-deploy-module-tests  # Ensure this points to the directory with your Terratest code
         go test -v ./...
