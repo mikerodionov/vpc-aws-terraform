@@ -10,7 +10,7 @@ on:
 
 jobs:
   terratest:
-    name: Run Terratest
+    name: Terratest Deploy Test
     runs-on: ubuntu-latest
 
     env:
