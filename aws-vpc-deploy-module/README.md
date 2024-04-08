@@ -52,5 +52,4 @@ module "aws-vpc-deploy-module" {
 - Comprehensible variable descriptions - we include variable descriptions into variable definitions and illustrate usage in module documentation (alternatively we could opt for adding usage examples into multiline description of each variable using here-document/heredoc style)
 - Inputs and validation - region ans subnet_count variables use validation to ensure clear error messages and fail fast approach
 - Outputs expsosure - we have defined ouptupts to displays essential information about deployed resources
-- Dynamic blocks & advanced loops (advanced)
-- Testing (advanced)
+- Dynamic blocks
