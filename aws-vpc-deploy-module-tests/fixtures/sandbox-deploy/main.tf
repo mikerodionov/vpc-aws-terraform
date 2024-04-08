@@ -1,4 +1,4 @@
-module "vpc" {
+module "aws_vpc_deploy_module" {
   source = "../../../aws-vpc-deploy-module"
 
   vpc_name = "sandbox"

@@ -21,7 +21,7 @@ func TestMyTerraformModule(t *testing.T) {
 
 	terraformOptions := &terraform.Options{
 		// The path to where your Terraform code is located
-		TerraformDir: "./fixtures/sandbox-deploy/",
+		TerraformDir: "./aws-vpc-deploy-module-tests/fixtures/sandbox-deploy",
 		// Environment variables to set when running Terraform
 		EnvVars: map[string]string{
 			"AWS_ACCESS_KEY_ID":     awsAccessKey,
