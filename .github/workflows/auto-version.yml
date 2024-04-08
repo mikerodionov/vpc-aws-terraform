@@ -12,10 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0  # Important for version calculation
           ref: ${{ github.event.pull_request.head.ref }} # Checkout the source branch of the PR
+
+      - name: Configure Git Safe Directory
+        run: git config --global --add safe.directory /github/workspace
 
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.26.0
