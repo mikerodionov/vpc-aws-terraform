@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "../../aws-vpc-deploy-module"
+  source = "../../../aws-vpc-deploy-module"
 
   vpc_name = "sandbox"
 
